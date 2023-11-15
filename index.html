@@ -27,19 +27,19 @@
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <div>
-      <img src="./img/favicon.ico" alt="logo">
-      <h1><a href="#">Ssenwoo</a></h1>
+  <header class="header">
+    <div class="header__logo">
+      <img class="header__logo_img" src="./img/favicon.ico" alt="logo">
+      <h1 class="header__logo_title"><a href="#">Ssenwoo</a></h1>
     </div>
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#work">My work</a></li>
-        <li><a href="#testmonial">Testimonial</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="header__menu">
+        <li><a class="header__menu__item active" href="#home">Home</a></li>
+        <li><a class="header__menu__item" href="#about">About</a></li>
+        <li><a class="header__menu__item" href="#skills">Skills</a></li>
+        <li><a class="header__menu__item" href="#work">My work</a></li>
+        <li><a class="header__menu__item" href="#testmonial">Testimonial</a></li>
+        <li><a class="header__menu__item" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -47,14 +47,15 @@
   <main></main>
     <!-- Home -->
     <section id="home">
-      <img src="./img/ysw-modified.png" alt="My photo">
-      <h1>Ssenwoo&#39;s Portfolio</h1>
-      <a href="#contact">Contact Me</a>
+      <img class="home__avatar" src="./img/ysw.jpg" alt="My photo">
+      <h2 class="home__title">Ssenwoo&#39;s <strong class="home__title--strong">Portfolio</strong></h2>
+      <p class="home__description">Electrical Engineer, Headhunter, Fullstack trainee</p>
+      <a class="home__contact" href="#contact">Contact Me</a>
     </section>
     <!-- About -->
-    <section id="about">
-      <h2>About me</h2>
-      <p>description</p>
+    <section id="about" class="section">
+      <h2 class="title">About me</h2>
+      <p class="description">description</p>
       <ul>
         <li>
           <i class="fa-solid fa-bolt"></i>
@@ -75,9 +76,9 @@
     </section>
 
     <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <p>Description</p>
+    <section id="skills" class="section">
+      <h2 class="title">Skills</h2>
+      <p class="description">Description</p>
       <div>
         <section>
           <h3>Coding Skills</h3>
@@ -124,9 +125,9 @@
       </div>
     </section>
     <!-- Work -->
-    <section id="work"></section>
-      <h2>My work</h2>
-      <p>Projects</p>
+    <section id="work" class="section">
+      <h2 class="title">My work</h2>
+      <p class="description">Projects</p>
       <ul>
         <li>
           <button>All</button><span>8</span>
@@ -199,11 +200,11 @@
          </a>
         </li>
       </ul>
-
+    </section>
     <!-- Testimonial -->
-    <section id="testimonial"></section>
-      <h2>Testimonial</h2>
-      <p>Description</p>
+    <section id="testimonial" class="section">
+      <h2 class="title">Testimonial</h2>
+      <p class="description">Description</p>
       <ul>
         <li>
           <img src="./img/testimonials/people1.webp" alt="people1">
@@ -227,6 +228,7 @@
           </div>
         </li>
       </ul>
+    </section>  
     <!-- Arrow up -->
     <aside>
       <a href="#home" title="back to top">
@@ -234,9 +236,9 @@
       </a>
     </aside>
   <!-- Footer -->
-  <footter id="contact">
-    <h2>Let&#39;s talk</h2>
-    <p>ssenwoo@gmail.com</p>
+  <footter id="contact" class="section">
+    <h2 class="title">Let&#39;s talk</h2>
+    <p class="description">ssenwoo@gmail.com</p>
     <ul>
       <li>
         <a href="https://www.youtube.com/channel/UCPuT_kZwLdA4cZaDnTC4cCQ" target="_blank" title="my youtube channel">
