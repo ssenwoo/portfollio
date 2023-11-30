@@ -448,6 +448,11 @@ button:focus {
   text-align: center;
   border-radius: 100%;
   box-shadow: 5px 5px 0px 0px var(--color-accent);
+  transition: opacity 300ms ease-in;
+}
+
+.arrow-up--removed {
+  opacity: 0;
 }
 
 @media screen and (max-width: 768px) {

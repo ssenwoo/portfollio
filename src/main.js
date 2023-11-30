@@ -21,3 +21,14 @@ document.addEventListener('scroll', () => {
   const homeOpacity = 1 - window.scrollY / homeHeight;
   homeBox.style.opacity = homeOpacity;
 });
+
+// 스크롤시 Home 화면 다음부터 aside arrow 나타나게 하기
+const arrowUp = document.querySelector('.arrow-up');
+
+document.addEventListener('scroll', () => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.classList.remove('arrow-up--removed');
+  } else {
+    arrowUp.classList.add('arrow-up--removed');
+  }
+});
