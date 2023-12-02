@@ -1,3 +1,5 @@
+'use strict';
+
 // 스크롤시 Header 불투명 mode 전환
 
 const headerBox = document.querySelector('.header');
@@ -31,4 +33,16 @@ document.addEventListener('scroll', () => {
   } else {
     arrowUp.classList.add('arrow-up--removed');
   }
+});
+
+// 윈도우 화면 축소(ScreenX 가 768 이하)되면 Header 메뉴 세로 모드로 변환
+const headerMenu = document.querySelector('.header__menu');
+const headerToggle = document.querySelector('.header__toggle');
+
+headerToggle.addEventListener('click', () => {
+  headerMenu.classList.toggle('open');
+});
+
+headerMenu.addEventListener('click', () => {
+  headerMenu.classList.remove('open');
 });
